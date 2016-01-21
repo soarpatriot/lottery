@@ -1,8 +1,8 @@
-# rufengda weixin pages
+# rufengda lottery 
 
 ## show pages
 
-[Demo](http://soarpatriot.github.io/order/) 
+[Demo](http://soarpatriot.github.io/lottery/) 
 
 An base front-end project for the stylus, jade gulp 
 ## Prerequisites
