@@ -1,0 +1,28 @@
+extends templates/master
+
+block vars
+
+block title
+  | 手机号查询
+
+block styles
+
+block content
+  .container.lottery 
+    .nubers-panel
+      span.number
+        a(id="first-number",class="btn btn-number") 0
+      span.number
+        a(id="second-number",class="btn btn-number") 0
+      span.number
+        a(id="third-number",class="btn btn-number") 0
+      span.number
+        a(id="forth-number",class="btn btn-number") 0
+      span.number
+        a(id="fifth-number",class="btn btn-number") 0
+  .container.lottery 
+    .row
+      .col-xs-6
+        button(id="start-lottery",value="开始",class="btn btn-success btn-block") 开始
+      .col-xs-6
+        button.btn.btn-block(id="btn-end",value="开始",class="btn-danger") 结束

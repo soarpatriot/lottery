@@ -1,0 +1,8 @@
+
+{
+  lottery: "rfd",
+  people:[
+    {id: "40205", name:"刘海宝"}, 
+    {id: "23908", name:"芳芳"} 
+  ]
+}
