@@ -32,13 +32,13 @@ $(function(){
   }
 
   $("#start-lottery").click(function(){
-    $("#result").hide();
+    $("#result").css("visibility","hidden");
     id = window.setInterval(tip,10)
     console.log("click");
   })
   $("#btn-end").click(function(){
     $("p").addClass("animated bounceOutLeft");
-    $("#result").show();
+    $("#result").css("visibility","visible");
     window.clearInterval(id)
     console.log("click end"); 
   })
