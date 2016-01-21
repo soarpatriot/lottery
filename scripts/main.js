@@ -1,4 +1,4 @@
-/* kpb2b : 0.0.1 : Thu Jan 21 2016 17:55:31 GMT+0800 (CST) */require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"validator":[function(require,module,exports){
+/* kpb2b : 0.0.1 : Thu Jan 21 2016 18:57:51 GMT+0800 (CST) */require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"validator":[function(require,module,exports){
 module.exports=require('14QWwY');
 },{}],"14QWwY":[function(require,module,exports){
 (function (global){
@@ -25571,11 +25571,12 @@ $(function(){
 
   $("#start-lottery").click(function(){
     $("#result").css("visibility","hidden");
+    $("p").removeClass("animated zoomInLeft");
     id = window.setInterval(tip,10)
     console.log("click");
   })
   $("#btn-end").click(function(){
-    $("p").addClass("animated bounceOutLeft");
+    $("p").addClass("animated zoomInLeft");
     $("#result").css("visibility","visible");
     window.clearInterval(id)
     console.log("click end"); 
@@ -25692,8 +25693,6 @@ module.exports=
     {id: "42450", name:"王忠全"}, 
     {id: "23355", name:"位传海"}, 
     {id: "32860", name:"王文宇"}, 
-    {id: "33010", name:"高毅"}, 
-    {id: "32369", name:"李轩安"}, 
     {id: "40523", name:"王海明"}, 
     {id: "40182", name:"杨光"},
     {id: "36891", name:"王丽达"}, 
