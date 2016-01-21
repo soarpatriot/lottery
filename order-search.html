@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>手机号查询</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Front-End templates for Kp b to b">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js"></script>
+  </head>
+  <body>
+    <div class="logo centered"><img src="./images/logo.png" class="logo-image"></div>
+    <div class="container"> 
+      <ul class="search-type"> 
+        <li class="centered"><a href="#mobile-tab" data-toggle="tab" class="tab-link"><img src="./images/mobile.png" class="search-icon search-icon-normal"><img src="./images/mobile-active.png" class="search-icon search-icon-active"><span class="text">手机号查询</span></a></li>
+        <li class="centered active"><a href="#order-tab" data-toggle="tab" class="tab-link"><img src="./images/order.png" class="search-icon search-icon-normal"><img src="./images/order-active.png" class="search-icon search-icon-active"><span class="text">运单号查询</span></a></li>
+      </ul>
+      <div class="tab-content"> 
+        <div id="mobile-tab" class="tab-pane active">
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="请输入手机号" class="form-control">
+            </div>
+            <div class="form-group">
+              <button class="btn btn-success btn-verify">获取验证码</button>
+              <input type="text" placeholder="请输入验证码" class="form-control">
+            </div>
+            <div class="form-group search-area"> 
+              <button class="btn  btn-danger btn-block">查询</button>
+            </div>
+          </form>
+        </div>
+        <div id="order-tab" class="tab-pane">
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="请输入运单号" class="form-control">
+            </div>
+            <div class="form-group">
+              <button class="btn  btn-grey btn-block">扫一扫</button>
+            </div>
+            <div class="form-group search-area"> 
+              <button class="btn  btn-danger btn-block">查询</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
