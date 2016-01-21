@@ -5,7 +5,6 @@ function randomNum(Min,Max){
 	var Range = Max - Min;   
 	var Rand = Math.random();   
 	return(Min + Math.round(Rand * Range)); 
-        seedRandom(Math.floor(time*10), true);  
 }   
 $(function(){
   var id;
