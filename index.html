@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>手机号查询</title>
+    <title>小酒窝</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Front-End templates for Kp b to b">
@@ -15,14 +15,16 @@
     <div class="logo centered"><img src="./images/logo.png" class="logo-image"></div>
     <div class="container lottery"> 
       <div class="nubers-panel"><span class="number"><a id="first-number" class="btn btn-number">0</a></span><span class="number"><a id="second-number" class="btn btn-number">0</a></span><span class="number"><a id="third-number" class="btn btn-number">0</a></span><span class="number"><a id="forth-number" class="btn btn-number">0</a></span><span class="number"><a id="fifth-number" class="btn btn-number">0</a></span></div>
+      <!--marquee(direction="left" scrolldelay="1" loop=-1 scrollamount="20" )-->
+      <p id="result" class="result">恭喜<a id="name" class="lottery-result"> </a>同学</p>
     </div>
-    <div class="container lottery"> 
+    <div class="container lottery footer">
       <div class="row">
         <div class="col-xs-6">
-          <button id="start-lottery" value="开始" class="btn btn-success btn-block">开始</button>
+          <button id="start-lottery" value="开始" name="click" class="btn btn-success btn-block">开始</button>
         </div>
         <div class="col-xs-6">
-          <button id="btn-end" value="开始" class="btn btn-block btn-danger">结束</button>
+          <button id="btn-end" value="开始" name="click" class="btn btn-block btn-danger">结束</button>
         </div>
       </div>
     </div>
