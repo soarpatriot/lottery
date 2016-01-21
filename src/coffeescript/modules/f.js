@@ -23,14 +23,36 @@ $(function(){
     $("#forth-number").text(codeArr[3])
     $("#fifth-number").text(codeArr[4])
 
+
+    var personname = people[number].name;
+    var nameArr = personname.split('   ')
+    console.log(nameArr); 
+    $("#name").text(nameArr[0])
+
   }
+
   $("#start-lottery").click(function(){
+    $("#result").hide();
     id = window.setInterval(tip,10)
-    console.log("click"); 
+    console.log("click");
   })
   $("#btn-end").click(function(){
+    $("p").addClass("animated bounceOutLeft");
+    $("#result").show();
     window.clearInterval(id)
     console.log("click end"); 
   })
 
+
+
+  var cks = document.getElementsByName("click");
+  for (var i = 0; i < cks.length; i++) {
+                cks[i].onclick = function() {
+                  for (var j = 0; j < cks.length;j++)
+                  {
+                    cks[j].disabled = false;
+                  }
+                  this.disabled = true;
+                }
+              }
 })

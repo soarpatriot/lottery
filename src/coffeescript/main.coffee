@@ -20,6 +20,6 @@ require "./modules/lottery.coffee"
 
 
 
-
+    
 
 
