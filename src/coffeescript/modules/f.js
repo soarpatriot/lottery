@@ -33,12 +33,12 @@ $(function(){
 
   $("#start-lottery").click(function(){
     $("#result").css("visibility","hidden");
-    $("p").removeClass("animated zoomInLeft");
+    $("p").removeClass("animated flash");
     id = window.setInterval(tip,10)
     console.log("click");
   })
   $("#btn-end").click(function(){
-    $("p").addClass("animated zoomInLeft");
+    $("p").addClass("animated flash");
     $("#result").css("visibility","visible");
     window.clearInterval(id)
     console.log("click end"); 
